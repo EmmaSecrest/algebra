@@ -1,0 +1,9 @@
+.equation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background-color: white;
+    padding: 1rem 2rem;
+}
+

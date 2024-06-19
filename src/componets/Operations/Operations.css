@@ -1,0 +1,8 @@
+.operations{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    position:relative;
+    top: -2vh;
+    
+}

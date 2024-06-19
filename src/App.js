@@ -1,5 +1,7 @@
 import logo from './images/logo_no_background.png';
 import './App.css';
+import Equations from './componets/Equation/Equations';
+import Operations from './componets/Operations/Operation';
 
 function App() {
   return (
@@ -8,6 +10,11 @@ function App() {
        <nav>
           <img src= {logo} alt ="logo" id ="logo"/>
        </nav>
+       <body>
+          <Equations />
+          <Operations/>
+       </body>
+
       </header>
     </div>
   );
