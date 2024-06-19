@@ -2,14 +2,17 @@ import React, { useState } from "react";
 import Button from '@mui/material/Button'
 import ButtonGroup from '@mui/material/ButtonGroup';
 import "./Operations.css"
+import plusSign from "../../images/plus_sign.png"
+import subtractionSign from "../../images/subtraction_sign.png"
+import equalSign from '../../images/equal_sign.png'
+import xSquared from '../../images/x_squared.png'
+
 
 export default function Operations(props){
     const [showOps,setShowOps] = useState(false)
-    console.log(showOps)
+    
     function showOperations(){
         setShowOps(!showOps)
-        console.log(showOps)
-
     }
 
     
@@ -37,27 +40,40 @@ export default function Operations(props){
                 <Button
                     sx={{
                         borderColor: "black",
-                        color:"black"
+                        color:"black",
+                        backgroundImage:`url(${plusSign})`,
+                        backgroundSize: 'contain',
+                        backgroundRepeat: 'no-repeat',
+                        backgroundPosition: 'center',
                     }}
                 >
-                    Op 1
+    
                 </Button>
                 <Button
                     sx={{
                         borderColor: "black",
-                        color:"black"
+                        color:"black",
+                        backgroundImage:`url(${subtractionSign})`,
+                        backgroundSize: 'contain',
+                        backgroundRepeat: 'no-repeat',
+                        backgroundPosition: 'center',
                     }}
                 >
-                    Op 2
+                    
                 </Button>
                 <Button
                     sx={{
                         borderColor: "black",
-                        color:"black"
+                        color:"black",
+                        backgroundImage:`url(${equalSign})`,
+                        backgroundSize: 'contain',
+                        backgroundRepeat: 'no-repeat',
+                        backgroundPosition: 'center',
                     }}
                 >
-                    Op 3
+                    
                 </Button>
+              
 
             </ButtonGroup>
 
