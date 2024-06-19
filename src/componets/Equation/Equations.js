@@ -12,11 +12,14 @@ export default function Equations(props){
                 variant="outlined" 
                 sx={{ 
                     '& .MuiOutlinedInput-root': { 
-                    borderRadius: '2vw', 
-                    width: '50vw',
-                    height:'3vw'
-                    } 
-                }}
+                      borderRadius: '2vw', 
+                      width: '50vw',
+                      height:'3vw'
+                    },
+                    '& .MuiOutlinedInput-input': {
+                      textAlign: 'center', // Center the text
+                    }
+                  }}
             />
             <Button 
                 variant="contained"
@@ -26,7 +29,10 @@ export default function Equations(props){
                     padding:".75vw",
                     borderRadius: '1vw',
                     width:'6vw',
-                    backgroundColor:'#354f88'
+                    backgroundColor:'#354f88',
+                    ':hover': {
+                        backgroundColor: 'black', // Adjust this value to set the hover color
+                      },
                 }}
             >
                 Solve
