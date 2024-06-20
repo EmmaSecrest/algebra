@@ -1,0 +1,19 @@
+.solution{
+    
+    width:60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    position: relative;
+    right :-20%;
+}
+
+.solution .MuiAccordion-root {
+    width: 100%;  
+  }
+
+  #solutions_list {
+    list-style-type: none;
+    padding-left: 0;
+  }

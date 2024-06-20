@@ -6,6 +6,13 @@ import "./Equation.css"
 
 export default function Equations(props){
     const [input, setInput] = useState('');
+
+    function handleSolutionsClick(input){
+        props.setEquation(input)
+        console.log("input: " , input)
+        props.setSolutionsButton(!props.isSolutionsButton)
+        console.log("solutions button on or off: " ,props.isSolutionsButton)
+    }
     
     
     return(
@@ -20,14 +27,15 @@ export default function Equations(props){
                     '& .MuiOutlinedInput-root': { 
                       borderRadius: '2vw', 
                       width: '50vw',
-                      height:'3vw'
+                      height:'7vh'
                     },
                     
                   }}
             />
             <Button 
                 variant="contained"
-                onClick={()=>{props.setEquation(input)}}  
+                onClick={()=>{handleSolutionsClick(input)}}
+                  
 
                 sx={{
                     position: 'relative', 
@@ -35,6 +43,7 @@ export default function Equations(props){
                     padding:".75vw",
                     borderRadius: '1vw',
                     width:'6vw',
+                    height:"7vh",
                     backgroundColor:'#354f88',
                     ':hover': {
                         backgroundColor: 'black', 
