@@ -21,7 +21,7 @@ function App() {
        </nav>
        <body>
           <Equations setEquation ={setEquation} setSolutionsButton ={setSolutionsButton} isSolutionsButton = {isSolutionsButton}/>
-          {/* <Operations/> */}
+          <Operations/>
 
           <Solution isSolutionsButton = {isSolutionsButton}/>
        </body>
